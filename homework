@@ -1,0 +1,37 @@
+print("STUDENT MARK SHEET")
+print("NAME : SREEKALA K M")
+sub_1 = 99
+sub_2 = 95
+sub_3 = 78
+sub_4 = 81
+sub_5 = 73
+sub_6 = 80
+print("MALAYALAM =", sub_1 , "out of 100")
+
+print("ENGLISH =" ,sub_2 , "out of 100")
+print("COMPUTER SCIENCE =", sub_3 , "out of 100")
+print("MATHEMATICS =" ,sub_4 , "out of 100")
+print("CHEMISTRY =", sub_5 , "out of 100")
+print("PHYSICS =" ,sub_6 , "out of 100")
+total = sub_1 + sub_2 + sub_3 + sub_4 + sub_5 + sub_6
+prcnt = total * 100 / 600
+print("TOTAL =", total , "out of 600")
+print("PERCENTAGE = ", prcnt, "%")
+if prcnt >= 90 and prcnt <= 100 :
+    print("GRADE = A+")
+    print("EXCELLENT")
+elif prcnt >=80 and prcnt <= 89 :
+    print("GRADE = A")
+    print("VERY GOOD")
+elif prcnt >= 70 and prcnt <= 79 :
+    print("GRADE = B")
+    print("GOOD")
+elif prcnt >=60 and prcnt <= 69 :
+    print("GRADE = C")
+    print("PASSED")
+elif prcnt >=50 and prcnt <= 59 :
+    print("GRADE D")
+    print("PASSED")
+else :
+    print("FAILED")
+
