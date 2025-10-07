@@ -12,7 +12,7 @@ print(f'{player} Health point :{php} \n {enemy} Health point : {ehp}')
 while php >= 0 and ehp >= 0 :
     print('Turn',turn)
     pch = random.choice(p)
-    # ATTACKING EACH OTHER
+# ATTACKING EACH OTHER
     if (pch == 'attack') : 
         edamage = random.randint(10,30)
         ehp = ehp - edamage
@@ -20,14 +20,14 @@ while php >= 0 and ehp >= 0 :
         php = php - pdamage
         print(f'{player} Health point :',{php})
         print(f'{enemy} Health point :',{ehp})
-        # PLAYER DEFENDING
+# PLAYER DEFENDING
     elif (pch == 'defend') :
         pdamage = random.randint(10,35)
         pdamage = pdamage // 2
         php = php - pdamage
         print(f'{player} Health point :',{php})
         print(f'{enemy} Health point :',{ehp})
-        # PLAYER HEALING
+ # PLAYER HEALING
     elif (pch == 'heal') :
         pheal = random.randint(10,25)
         if php + pheal < 100 :
@@ -43,4 +43,5 @@ if php <= 0 :
 elif ehp <= 0 :
     print(f'GAME OVER !!! \n {player} Wins !!')
  
+
 
